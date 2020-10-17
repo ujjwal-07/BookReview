@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+body { 
+	 background: url("frontbg.jpg");
+            animation: fadeInAnimation ease 3s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        }
+
+     .slider-frame{
+      border-radius: 4%;
+    overflow: hidden;
+    height: 200px;
+    width: 900px;
+    margin-left: 360px;
+    margin-top: 20px;}
+
+    @-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:1200px;}
+    30% {left:1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left:0px;}}
+
+    .slide-images{   
+    width: 3600px;
+    height: 800px;
+    border-radius: 30%;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;}
+
+
+
+  .overlaylogo
+   {
+	   position: relative;
+	   width:50%;
+	   TOP :-213px
+   }
+   .image
+   {
+	   display: block;
+	   width: 100%;
+	   height: auto;
+	 border-radius: 30%;
+	 padding: 5px;
+	 width: 150px;
+   }
+   .overlaytextclass
+   {
+	   position: absolute;
+	 bottom: 120%;
+	 left: 0;
+	 right: 0;
+	 background-color: #008CBA;
+	 width: 150px	;
+	 transition: .5s ease;
+	 height: auto;
+	 border-radius: 30%;
+	 padding: 5px;
+	 
+	 
+	 }
+  .overlaylogo:hover .overlaytextclass
+  {
+  	bottom:0;
+  	height: 100%;
+  }
+  .overlaytext 
+  {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width: 100%; 
+  max-height: 200%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: grey;
+    color: #f1f1f1;
+  
+    top: 23%;
+    bottom: 57%;
+    text-align: center;
+    width: 23%;
+    height: 155px;
+    left: 796px;
+  
+  }
+
+footer
+{
+	width: 100%;
+	background:#222;
+	color: #aaa;
+}
+.container
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  top: 23px;
+  margin-top: 50%;
+}
+
+.box
+{
+	flex : 1;
+	margin : 15px;
+	min-width: 300px;
+	left: 100%;
+}
+.box h2
+{
+	text-transform: uppercase; 
+	letter-spacing: 3px;
+	border-bottom: 2px solid #555;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.box h2::before
+{
+	content : " ";
+	width: 100px;
+	height:100%;
+	border-bottom: 2px solid yellow ;
+	position: absolute;
+}
+.box a
+{
+	color: #aaa;
+	text-decoration: none;
+	display: inline-block;
+}
+.box a i
+{
+	background: #333;
+	width:40px;
+	height:40px;
+	text-align : center;
+	line-height: 40px;
+	margin-right:5px;
+	transition: 05s linear;
+}
+.box a:hover , .box a:hover i
+{
+	color: crimson;
+	border-radius: 50%;
+}
+.social
+{
+	margin-top: 5px;
+}
+.address a
+{
+	display: block;
+	margin-bottom: 15px;
+	font-size: 1.3em;
+}
+#footerform input
+{
+	width: 100%;
+	min-height: 30px;
+	border: none;
+	outline: none;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+#footerform textarea 
+{
+	width: 100%;
+	min-height: 30px;
+	border: none;
+	outline: none;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+span
+{
+	color : crimson;
+}
+#footerform button
+{
+	width: 50%;
+	position: relative;
+	top :-10px;
+	height: 40px;
+	outline: none;
+	background: crimson;
+	font-size : 1.3em;
+	cursor: pointer;
+	border-radius: 10px;
+	margin: 34px;
+    left: -32px;
+}
+.author
+{
+	height:25px;
+	width:100%;
+	background: black;
+	text-align: center;
+	padding: 10px;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+button[type=submit]:hover 
+ {
+ 	background:#90EE90;
+ 	opacity: 0.7;
+ 	cursor: pointer;
+ }
+ button{
+  font-size: 24px;
+  border-radius: 8px;
+  box-shadow: black;
+  transition-duration: 0.4s;
+}
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+ 
